@@ -97,9 +97,11 @@ function validaContrasena(contrasena){  //Vamos a buscar al menos 1 mayuscula, 1
     for (i=0; i< texto.length; i++){
         if (texto[i] == texto[i].toUpperCase()){
             mayusculas = true;
-        } else if (texto[i] == texto[i].toLowerCase()) {
+        } 
+        if (texto[i] == texto[i].toLowerCase()) {
             minusculas = true;
-        } else if (!isNaN(texto[i])) {
+        } 
+        if (!isNaN(texto[i])) {
             numeros = true;
         } 
     }
